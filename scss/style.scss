@@ -1,10 +1,13 @@
-@import 'base/variables';
-@import 'base/listas';
 
+/*Variables*/
+@import 'base/variables';
+
+/*General*/
 @import 'components/global';
 @import 'components/header';
 @import 'components/footer';
 
+/*Pages*/
 @import'components/pages/index';
 @import'components/pages/nosotros';
 @import'components/pages/servicios';

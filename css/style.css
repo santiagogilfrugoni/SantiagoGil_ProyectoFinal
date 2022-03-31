@@ -1,6 +1,7 @@
+/*Variables*/
 /* VARIABLES */
 /* COLORS */
-/* LISTAS */
+/*General*/
 /* GLOBAL ATRIBUTES */
 * {
   padding: 0;
@@ -136,6 +137,7 @@ footer .footer-container div p {
   color: white;
 }
 
+/*Pages*/
 /* INDEX */
 /* SOBRE NOSOTROS */
 .about-us {
@@ -182,20 +184,29 @@ footer .footer-container div p {
   text-align: justify;
 }
 .services-index .services-index-container .services-index-grid .services-index-title {
-  font-size: 2.5rem;
+  font-size: 1.8rem;
   font-weight: 400;
   margin-bottom: 10px;
   justify-self: center;
   text-align: center;
 }
 .services-index .services-index-container .services-index-grid .services-index-description {
-  font-size: 1.6rem;
-  padding: 20px;
+  font-size: 1.8rem;
+  padding: 1.6px;
   background-color: #5f7096;
+  border-radius: 3px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.7);
   color: white;
   width: 250px;
   height: 230px;
+  display: flex;
+  align-items: center;
   justify-self: center;
+  justify-content: center;
+}
+.services-index .services-index-container .services-index-grid .services-index-description .services-description-content {
+  line-height: 40px;
+  text-align: center;
 }
 .services-index .services-index-container .services-index-grid .services-index-title-1 {
   grid-area: title-1;
@@ -215,9 +226,8 @@ footer .footer-container div p {
 .services-index .services-index-container .services-index-grid .services-index-description-3 {
   grid-area: description-3;
 }
-
 @media screen and (max-width: 1300px) {
-  .services-index-grid {
+  .services-index .services-index-container .services-index-grid {
     display: none;
     display: grid;
     grid-template-columns: auto;
@@ -225,6 +235,7 @@ footer .footer-container div p {
     grid-template-areas: "title-1" "description-1" "title-2" "description-2" "title-3" "description-3";
   }
 }
+
 /* Sobre Nosotros */
 .director-container {
   width: 80%;
@@ -405,8 +416,8 @@ footer .footer-container div p {
   max-width: auto;
 }
 .contactUs-container .contactUs-content .contactForm-container .info-container .location-content iframe {
-  max-width: 300px;
-  max-height: 200px;
+  max-width: 450px;
+  max-height: 350px;
 }
 
 .testimony-container {
